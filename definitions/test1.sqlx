@@ -4,3 +4,4 @@ config {
 
 SELECT *
 FROM `data-508912.test.housing`
+limit 10
