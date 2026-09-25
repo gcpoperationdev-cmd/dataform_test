@@ -1,0 +1,5 @@
+defaultProject: data-508912
+defaultDataset: test
+defaultLocation: US
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: "3.0.43"

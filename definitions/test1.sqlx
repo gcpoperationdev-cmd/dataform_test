@@ -1,0 +1,6 @@
+config {
+  type: "table"
+}
+
+SELECT *
+FROM `data-508912.test.housing`
