@@ -1,0 +1,10 @@
+config {
+  type: "table"
+}
+
+SELECT
+  customer_id,
+  customer_name,
+  total_sales
+FROM `my_project.my_dataset.customers`
+WHERE total_sales > 1000
