@@ -1,0 +1,17 @@
+config {
+  type: "table",
+  database: "data-508912",
+  schema: "test",
+  name: "near_ocean",
+
+  bigquery: {
+    labels: {
+      project: "housing",
+      environment: "development"
+    }
+  }
+}
+
+SELECT *
+FROM ${ref("housing")}
+WHERE ocean_proximity = 'NEAR OCEAN'

@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  description: "Top 100 near-ocean housing records by median income",
+  tags: ["income", "ouput", "daily"]
+}
+
+SELECT
+  *
+FROM ${ref("near_ocean")}
+ORDER BY median_income DESC
+LIMIT 100
