@@ -1,0 +1,6 @@
+config {
+  type: "declaration",
+  database: "data-508912",
+  schema: "test",
+  name: "housing"
+}
