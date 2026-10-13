@@ -1,0 +1,9 @@
+config {
+  type: "operations",
+  name: "create_near_ocean"
+}
+
+CREATE OR REPLACE TABLE `data-508912.test.near_ocean_backup` AS
+SELECT *
+FROM ${ref("housing")}
+WHERE ocean_proximity = 'NEAR OCEAN';

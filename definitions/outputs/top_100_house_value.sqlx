@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  description: "Top 100 near-ocean housing records by median house value",
+  tags: ["house_value", "output", "daily"]
+}
+
+SELECT
+  *
+FROM ${ref("near_ocean")}
+ORDER BY median_house_value DESC
+LIMIT 100

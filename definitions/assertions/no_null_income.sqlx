@@ -1,0 +1,7 @@
+config {
+  type: "assertion"
+}
+
+SELECT *
+FROM ${ref("near_ocean")}
+WHERE median_income IS NULL
